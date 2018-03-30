@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Posts <button class="btn btn-success" (click)="logout()">Logout</button></h1>
+  
+  <div class="container" *ngFor="let post of posts">
+    <thead>
+      <tr>
+        <td>{{ post.title }}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ post.content }}</td>
+      </tr>
+    </tbody>
+  </div>
+</div>
